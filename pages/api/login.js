@@ -1,21 +1,5 @@
-import cookie from "cookie"
 import { sign } from "jsonwebtoken"
 import { serialize } from "cookie"
-
-// export default (req, res) => {
-//     res.setHeader("Set-Cookie", 
-//     cookie.serialize("token", req.body.token, {
-//         httpOnly: true,
-//         secure: process.env.NODE_ENV !== 'development',
-//         maxAge: 60 * 60 * 1,
-//         sameSite: "strict",
-//         path: '/'
-//     }))
-//     req.cookies.token = req.body.token
-//     res.statusCode = 200
-//     res.json({success: true})
-
-// }
 
 const secret = process.env.NEXT_PUBLIC_SECRET
 
